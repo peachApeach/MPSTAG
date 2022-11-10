@@ -1,0 +1,15 @@
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain\bin\Debug\net6.0\MPSTAG.Domain.deps.json
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain\bin\Debug\net6.0\MPSTAG.Domain.dll
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain\bin\Debug\net6.0\MPSTAG.Domain.pdb
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain\bin\Debug\net6.0\MPSTAG.Domain.Shared.dll
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain\bin\Debug\net6.0\MPSTAG.Domain.Shared.pdb
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain\obj\Debug\net6.0\MPSTAG.Domain.csproj.AssemblyReference.cache
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain\obj\Debug\net6.0\MPSTAG.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain\obj\Debug\net6.0\MPSTAG.Domain.AssemblyInfoInputs.cache
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain\obj\Debug\net6.0\MPSTAG.Domain.AssemblyInfo.cs
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain\obj\Debug\net6.0\MPSTAG.Domain.csproj.CoreCompileInputs.cache
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain\obj\Debug\net6.0\MPSTAG.Domain.csproj.CopyComplete
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain\obj\Debug\net6.0\MPSTAG.Domain.dll
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain\obj\Debug\net6.0\refint\MPSTAG.Domain.dll
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain\obj\Debug\net6.0\MPSTAG.Domain.pdb
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain\obj\Debug\net6.0\ref\MPSTAG.Domain.dll

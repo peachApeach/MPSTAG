@@ -1,0 +1,13 @@
+C:\신규개발\5) MPSTAG\src\MPSTAG.Application.Contracts\bin\Debug\netstandard2.0\MPSTAG.Application.Contracts.deps.json
+C:\신규개발\5) MPSTAG\src\MPSTAG.Application.Contracts\bin\Debug\netstandard2.0\MPSTAG.Application.Contracts.dll
+C:\신규개발\5) MPSTAG\src\MPSTAG.Application.Contracts\bin\Debug\netstandard2.0\MPSTAG.Application.Contracts.pdb
+C:\신규개발\5) MPSTAG\src\MPSTAG.Application.Contracts\bin\Debug\netstandard2.0\MPSTAG.Domain.Shared.dll
+C:\신규개발\5) MPSTAG\src\MPSTAG.Application.Contracts\bin\Debug\netstandard2.0\MPSTAG.Domain.Shared.pdb
+C:\신규개발\5) MPSTAG\src\MPSTAG.Application.Contracts\obj\Debug\netstandard2.0\MPSTAG.Application.Contracts.csproj.AssemblyReference.cache
+C:\신규개발\5) MPSTAG\src\MPSTAG.Application.Contracts\obj\Debug\netstandard2.0\MPSTAG.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\신규개발\5) MPSTAG\src\MPSTAG.Application.Contracts\obj\Debug\netstandard2.0\MPSTAG.Application.Contracts.AssemblyInfoInputs.cache
+C:\신규개발\5) MPSTAG\src\MPSTAG.Application.Contracts\obj\Debug\netstandard2.0\MPSTAG.Application.Contracts.AssemblyInfo.cs
+C:\신규개발\5) MPSTAG\src\MPSTAG.Application.Contracts\obj\Debug\netstandard2.0\MPSTAG.Application.Contracts.csproj.CoreCompileInputs.cache
+C:\신규개발\5) MPSTAG\src\MPSTAG.Application.Contracts\obj\Debug\netstandard2.0\MPSTAG.Application.Contracts.csproj.CopyComplete
+C:\신규개발\5) MPSTAG\src\MPSTAG.Application.Contracts\obj\Debug\netstandard2.0\MPSTAG.Application.Contracts.dll
+C:\신규개발\5) MPSTAG\src\MPSTAG.Application.Contracts\obj\Debug\netstandard2.0\MPSTAG.Application.Contracts.pdb

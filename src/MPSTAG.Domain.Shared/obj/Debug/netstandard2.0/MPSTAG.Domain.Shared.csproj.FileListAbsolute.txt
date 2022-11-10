@@ -1,0 +1,11 @@
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain.Shared\bin\Debug\netstandard2.0\MPSTAG.Domain.Shared.deps.json
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain.Shared\bin\Debug\netstandard2.0\MPSTAG.Domain.Shared.dll
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain.Shared\bin\Debug\netstandard2.0\MPSTAG.Domain.Shared.pdb
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain.Shared\obj\Debug\netstandard2.0\MPSTAG.Domain.Shared.csproj.AssemblyReference.cache
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain.Shared\obj\Debug\netstandard2.0\MPSTAG.Domain.Shared.EmbeddedFilesManifest.cache
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain.Shared\obj\Debug\netstandard2.0\MPSTAG.Domain.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain.Shared\obj\Debug\netstandard2.0\MPSTAG.Domain.Shared.AssemblyInfoInputs.cache
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain.Shared\obj\Debug\netstandard2.0\MPSTAG.Domain.Shared.AssemblyInfo.cs
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain.Shared\obj\Debug\netstandard2.0\MPSTAG.Domain.Shared.csproj.CoreCompileInputs.cache
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain.Shared\obj\Debug\netstandard2.0\MPSTAG.Domain.Shared.dll
+C:\신규개발\5) MPSTAG\src\MPSTAG.Domain.Shared\obj\Debug\netstandard2.0\MPSTAG.Domain.Shared.pdb
