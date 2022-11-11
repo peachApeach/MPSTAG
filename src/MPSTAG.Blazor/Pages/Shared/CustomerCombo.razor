@@ -1,0 +1,12 @@
+﻿@using MPSTAG.Customers
+
+
+<Telerik.Blazor.Components.TelerikComboBox 
+                                           TItem="@CustomerDto"
+                                           TValue="int"
+                                           OnRead="@GetCustomer"
+                                           Placeholder="Select Customer"
+                                           ClearButton="true"
+                                           TextField="@nameof(CustomerDto.name)"
+                                           ValueField = "@nameof(CustomerDto.customer_id)"
+></Telerik.Blazor.Components.TelerikComboBox>
