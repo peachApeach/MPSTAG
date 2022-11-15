@@ -33,8 +33,11 @@ public class Program
                 .UseAutofac()
                 .UseSerilog();
             await builder.AddApplicationAsync<MPSTAGBlazorModule>();
+            builder.Services.AddTelerikBlazor();
+
             var app = builder.Build();
             await app.InitializeApplicationAsync();
+            app.UseStaticFiles();
             await app.RunAsync();
             return 0;
         }

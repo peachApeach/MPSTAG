@@ -1,8 +1,8 @@
 ﻿@page "/"
 @namespace MPSTAG.Blazor.Pages
 @using System.Globalization
-@using Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme.Themes.LeptonXLite
-@using Volo.Abp.AspNetCore.Components.Server.LeptonXLiteTheme.Bundling
+@using Volo.Abp.AspNetCore.Components.Server.BasicTheme.Bundling
+@using Volo.Abp.AspNetCore.Components.Web.BasicTheme.Themes.Basic
 @using Volo.Abp.Localization
 @{
     Layout = null;
@@ -17,7 +17,11 @@
     <title>TagManagement.Blazor</title>
     <base href="~/" />
 
-    <abp-style-bundle name="@BlazorLeptonXLiteThemeBundles.Styles.Global" />
+    <abp-style-bundle name="@BlazorBasicThemeBundles.Styles.Global" />
+
+    <script src="_content/Telerik.UI.for.Blazor/js/telerik-blazor.js" defer></script>
+    <link rel="stylesheet" href="_content/Telerik.UI.for.Blazor/css/kendo-theme-default/all.css" />
+
 </head>
 <body class="abp-application-layout bg-light @rtl">
 
@@ -34,6 +38,8 @@
         <a class="dismiss">🗙</a>
     </div>
 
-    <abp-script-bundle name="@BlazorLeptonXLiteThemeBundles.Scripts.Global" />
+    @*<abp-script-bundle name="@BlazorLeptonXLiteThemeBundles.Scripts.Global" />*@
+    <abp-script-bundle name="@BlazorBasicThemeBundles.Scripts.Global" />
+    <script src="_framework/blazor.server.js"></script>
 </body>
 </html>

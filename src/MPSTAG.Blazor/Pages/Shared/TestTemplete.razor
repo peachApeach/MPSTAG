@@ -1,15 +1,10 @@
-﻿@page "/tagList"
+﻿@*How to declare the combobox if no Value or Data are provided*@
 
-<h3>TagList</h3>
+@*<Telerik.Blazor.Components.TelerikComboBox Data="@myComboData" TextField="MyTextField" ValueField="MyValueField" TValue="int" TItem="MyDdlModel">
 
-@*<CustomerCombo />*@
-@*<TestTemplete />*@
+</Telerik.Blazor.Components.TelerikComboBox>*@
 
-<Telerik.Blazor.Components.TelerikComboBox Data="@myComboData" TextField="MyTextField" ValueField="MyValueField" TValue="int" TItem="MyDdlModel">
-
-</Telerik.Blazor.Components.TelerikComboBox>
-
-
+@*
 @code {
     public class MyDdlModel //TItem matches the type of the model
     {
@@ -20,4 +15,6 @@
     IEnumerable<MyDdlModel> myComboData = Enumerable.Range(1, 20).Select(x => new MyDdlModel { MyTextField = "item " + x, MyValueField = x });
 
     //the same configuration applies if the "myComboData" object is null initially and is populated on some event
-}
+}*@
+
+<TelerikButton Title="button" />

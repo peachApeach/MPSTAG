@@ -40,6 +40,10 @@ using Volo.Abp.UI;
 using Volo.Abp.UI.Navigation;
 using Volo.Abp.UI.Navigation.Urls;
 using Volo.Abp.VirtualFileSystem;
+using Autofac.Core;
+using Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.Bundling;
+using Volo.Abp.AspNetCore.Components.Server.BasicTheme.Bundling;
+using Volo.Abp.AspNetCore.Components.Server.BasicTheme;
 
 namespace MPSTAG.Blazor;
 
@@ -51,7 +55,7 @@ namespace MPSTAG.Blazor;
     typeof(AbpSwashbuckleModule),
     typeof(AbpAspNetCoreSerilogModule),
     typeof(AbpAccountWebOpenIddictModule),
-    typeof(AbpAspNetCoreComponentsServerLeptonXLiteThemeModule),
+    typeof(AbpAspNetCoreComponentsServerBasicThemeModule),
     typeof(AbpAspNetCoreMvcUiLeptonXLiteThemeModule),
     typeof(AbpIdentityBlazorServerModule),
     typeof(AbpTenantManagementBlazorServerModule),
@@ -82,6 +86,7 @@ public class MPSTAGBlazorModule : AbpModule
                 options.UseAspNetCore();
             });
         });
+        
     }
 
     public override void ConfigureServices(ServiceConfigurationContext context)
@@ -100,6 +105,8 @@ public class MPSTAGBlazorModule : AbpModule
         ConfigureBlazorise(context);
         ConfigureRouter(context);
         ConfigureMenu(context);
+
+        context.Services.AddTelerikBlazor();
     }
 
     private void ConfigureAuthentication(ServiceConfigurationContext context)
@@ -122,7 +129,7 @@ public class MPSTAGBlazorModule : AbpModule
         {
             // MVC UI
             options.StyleBundles.Configure(
-                LeptonXLiteThemeBundles.Styles.Global,
+                BasicThemeBundles.Styles.Global,
                 bundle =>
                 {
                     bundle.AddFiles("/global-styles.css");
@@ -131,7 +138,7 @@ public class MPSTAGBlazorModule : AbpModule
 
             //BLAZOR UI
             options.StyleBundles.Configure(
-                BlazorLeptonXLiteThemeBundles.Styles.Global,
+                BlazorBasicThemeBundles.Styles.Global,
                 bundle =>
                 {
                     bundle.AddFiles("/blazor-global-styles.css");
@@ -194,6 +201,8 @@ public class MPSTAGBlazorModule : AbpModule
                 options.CustomSchemaIds(type => type.FullName);
             }
         );
+
+
     }
 
     private void ConfigureBlazorise(ServiceConfigurationContext context)
