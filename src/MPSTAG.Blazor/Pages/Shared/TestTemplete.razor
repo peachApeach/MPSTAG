@@ -1,10 +1,10 @@
 ﻿@*How to declare the combobox if no Value or Data are provided*@
 
-@*<Telerik.Blazor.Components.TelerikComboBox Data="@myComboData" TextField="MyTextField" ValueField="MyValueField" TValue="int" TItem="MyDdlModel">
+<Telerik.Blazor.Components.TelerikComboBox Data="@myComboData" TextField="MyTextField" ValueField="MyValueField" TValue="int" TItem="MyDdlModel">
 
-</Telerik.Blazor.Components.TelerikComboBox>*@
+</Telerik.Blazor.Components.TelerikComboBox>
 
-@*
+
 @code {
     public class MyDdlModel //TItem matches the type of the model
     {
@@ -15,6 +15,30 @@
     IEnumerable<MyDdlModel> myComboData = Enumerable.Range(1, 20).Select(x => new MyDdlModel { MyTextField = "item " + x, MyValueField = x });
 
     //the same configuration applies if the "myComboData" object is null initially and is populated on some event
-}*@
+}
 
-<TelerikButton Title="button" />
+
+@*
+
+<TelerikButton OnClick="@MyClickHandler">Click me!</TelerikButton>
+@thankYouString
+
+@code {
+    string thankYouString;
+
+    protected void MyClickHandler()
+    {
+        thankYouString = string.Format("Thank you for clicking me at {0:HH:mm:ss} on {0:dd MMM yy}. Now you can write front-end with C#, yay!", DateTime.Now);
+        StateHasChanged();
+    }
+}
+
+
+<TelerikButton ThemeColor="@(ThemeConstants.Button.ThemeColor.Primary)">Primary Button</TelerikButton>
+
+<TelerikButton Class="RedText">Red Text Button</TelerikButton>
+*@
+
+
+
+
