@@ -30,7 +30,7 @@ namespace MPSTAG.Customers
                 FROM T_CUSTOMER
                 WHERE org_code = 'KR' AND status <> 3");
 
-            var vendors = await dbConnection.QueryAsync<Customer>(
+            var customers = await dbConnection.QueryAsync<Customer>(
                 builder.ToString(),
                 null,
                 transaction: await GetDbTransactionAsync(),
@@ -38,7 +38,7 @@ namespace MPSTAG.Customers
             );
             List<Customer> emptyList = new List<Customer>();
 
-                return (List<Customer>)vendors;
+                return (List<Customer>)customers;
         }
 
     }
