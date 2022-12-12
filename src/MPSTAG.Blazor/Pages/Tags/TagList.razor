@@ -1,13 +1,19 @@
 ﻿@page "/tagList"
 
 <h3>TagList</h3>
+<TelerikRootComponent>
+    <CustomerGrid />
+    @*<CustomerCombo />*@
+</TelerikRootComponent>
 
-@*<CustomerCombo />*@
+
 @*<TestTemplete />*@
+@*<TelerikRootComponent>
+    <Telerik.Blazor.Components.TelerikComboBox Data="@myComboData" TextField="MyTextField" ValueField="MyValueField" TValue="int" TItem="MyDdlModel">
 
-<Telerik.Blazor.Components.TelerikComboBox Data="@myComboData" TextField="MyTextField" ValueField="MyValueField" TValue="int" TItem="MyDdlModel">
+    </Telerik.Blazor.Components.TelerikComboBox>
+</TelerikRootComponent>
 
-</Telerik.Blazor.Components.TelerikComboBox>
 
 
 @code {
@@ -20,4 +26,4 @@
     IEnumerable<MyDdlModel> myComboData = Enumerable.Range(1, 20).Select(x => new MyDdlModel { MyTextField = "item " + x, MyValueField = x });
 
     //the same configuration applies if the "myComboData" object is null initially and is populated on some event
-}
+}*@

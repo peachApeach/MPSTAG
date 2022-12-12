@@ -1,10 +1,7 @@
 ﻿using Dapper;
 using MPSTAG.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using Volo.Abp.DependencyInjection;
@@ -13,7 +10,7 @@ using Volo.Abp.EntityFrameworkCore;
 
 namespace MPSTAG.Customers
 {
-    public class CustomerRepository : DapperRepository<MPSDbContext>, ICustomerRepository
+    public class CustomerRepository : DapperRepository<MPSDbContext>, ICustomerRepository, ITransientDependency
     {
         public CustomerRepository(IDbContextProvider<MPSDbContext> dbContextProvider) : base(dbContextProvider)
         {

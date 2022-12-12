@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MPSTAG.Customers;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
 using Volo.Abp.Data;
@@ -50,6 +51,8 @@ public class MPSDbContext :
     public DbSet<Tenant> Tenants { get; set; }
     public DbSet<TenantConnectionString> TenantConnectionStrings { get; set; }
 
+    public DbSet<Customer> Customers { get; set; }
+
     #endregion
 
     public MPSDbContext(DbContextOptions<MPSDbContext> options)
@@ -81,6 +84,8 @@ public class MPSDbContext :
         //    b.ConfigureByConvention(); //auto configure for the base class props
         //    //...
         //});
+
+
     }
 }
 

@@ -1,20 +1,17 @@
-﻿using AutoMapper.Internal.Mappers;
-using System;
+﻿
 using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
 using System.Threading.Tasks;
-using Volo.Abp.Application.Services;
+using Volo.Abp.DependencyInjection;
 
 namespace MPSTAG.Customers
 {
-    public class CustomerAppService : ApplicationService, ICustomerAppService
+    public class CustomerAppService : MPSTAGAppService, ICustomerAppService
     {
         private readonly ICustomerRepository _customerRepository;
 
         public CustomerAppService(ICustomerRepository customerRepository)
         {
+            //repository에 , ITransientDependency를 상속받음으로써 해당 생성자를 사용할 수 있게 되었다.
             _customerRepository = customerRepository;
         }   
 

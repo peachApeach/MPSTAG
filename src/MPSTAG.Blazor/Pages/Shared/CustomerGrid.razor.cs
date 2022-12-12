@@ -4,19 +4,20 @@ using Telerik.Blazor.Components;
 
 namespace MPSTAG.Blazor.Pages.Shared
 {
-    public partial class CustomerCombo
+    public partial class CustomerGrid
     {
         private readonly ICustomerAppService _customerAppService;
-        public int selectCustomer { get; set; }=0;
 
-        public CustomerCombo(ICustomerAppService customerAppService)
+        public CustomerGrid(ICustomerAppService customerAppService)
         {
             _customerAppService = customerAppService;
         }
 
-        public async Task GetCustomer(ComboBoxReadEventArgs args)
+        private async Task readCustomers(GridReadEventArgs arg)
         {
-            args.Data = await _customerAppService.GetCustomerAppService();
+            arg.Data = await _customerAppService.GetCustomerAppService();
         }
+
+
     }
 }

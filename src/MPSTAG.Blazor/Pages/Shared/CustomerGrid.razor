@@ -1,0 +1,19 @@
+﻿@using MPSTAG.Customers
+
+<TelerikGrid
+    TItem="@CustomerDto"
+    OnRead="@readCustomers"
+    Sortable="true"
+    SortMode="SortMode.Multiple"
+    FilterMode="GridFilterMode.FilterMenu"
+    Resizable="true"
+>
+    
+    <GridColumns>
+        <GridColumn Field="@nameof(CustomerDto.name)" />
+        <GridColumn Field="@nameof(CustomerDto.customer_id)" />
+    </GridColumns>
+
+
+
+</TelerikGrid>

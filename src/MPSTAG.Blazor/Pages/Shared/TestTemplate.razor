@@ -1,5 +1,5 @@
 ﻿@*How to declare the combobox if no Value or Data are provided*@
-
+@*
 <Telerik.Blazor.Components.TelerikComboBox Data="@myComboData" TextField="MyTextField" ValueField="MyValueField" TValue="int" TItem="MyDdlModel">
 
 </Telerik.Blazor.Components.TelerikComboBox>
@@ -15,7 +15,7 @@
     IEnumerable<MyDdlModel> myComboData = Enumerable.Range(1, 20).Select(x => new MyDdlModel { MyTextField = "item " + x, MyValueField = x });
 
     //the same configuration applies if the "myComboData" object is null initially and is populated on some event
-}
+}*@
 
 
 @*
@@ -40,5 +40,38 @@
 *@
 
 
+@*Selected value: @selectedValue
+<br />
 
+<TelerikComboBox Data="@myComboData" TextField="MyTextField" ValueField="MyValueField" @bind-Value="selectedValue"
+                 Placeholder="Select an item..." ClearButton="true" Filterable="true">
+</TelerikComboBox>
 
+@code {
+    IEnumerable<MyDdlModel> myComboData = Enumerable.Range(1, 20).Select(x => new MyDdlModel { MyTextField = "item " + x, MyValueField = x });
+
+    int selectedValue { get; set; }
+
+    //in a real case, the model is usually in a separate file
+    //the model type and value field type must be provided to the dropdpownlist
+    public class MyDdlModel
+    {
+        public int MyValueField { get; set; }
+        public string MyTextField { get; set; }
+    }
+}
+*@
+<TelerikComboBox Data="@MyList" @bind-Value="MyItem">
+</TelerikComboBox>
+
+@code {
+    protected List<string> MyList = new List<string>() { "first", "second", "third" };
+
+    protected string MyItem { get; set; }
+
+    //Define a preselected value when the component initializes
+    protected override void OnInitialized()
+    {
+        MyItem = "second";
+    }
+}
