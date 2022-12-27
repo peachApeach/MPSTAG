@@ -37,6 +37,5 @@ namespace MPSTAG.Customers
 
                 return (List<Customer>)customers;
         }
-
     }
 }

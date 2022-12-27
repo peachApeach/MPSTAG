@@ -7,15 +7,17 @@ using Volo.Abp.Domain.Entities;
 
 namespace MPSTAG.Customers
 {
-    public class Customer
+    public class Customer : Entity
     {
+        
         public int customer_id { get; set; }
         public string name { get; set; }
 
-        //public override object[] GetKeys()
-        //{
-        //    return new object[] { customer_id };
-        //}
+
+        public override object[] GetKeys()
+        {
+            return new object[] { customer_id };
+        }
 
     }
 }
